@@ -1,7 +1,3 @@
-<!-- 
-  本代码由 小宜技术猫 www.azpay.cn 创建
-  严禁反编译、逆向等任何形式的侵权行为，违者将追究法律责任
- -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,35 +21,35 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line
 </head>
 <body>
 <div class="box">
-	<div class="logo">
-		<img src="/aireading.gif" width="100">
-	</div>
-	<div class="tip">
-		<small>
-		<div class="ipinfo">
-			<b id="cip"></b><span id="cname"></span>
-		</div>
-		<div>
-			嗨多磨！小爱正在自动为您分配最快的节点
-		</div>
-		<div>
-			加载完之后绊爱将进入无限期休眠
-		</div>
-		<hr>
-		<div>
-			进度条如果不动并非卡顿<b>而是绊爱正在努力在加载数据！！！</b>
-		</div>
-		</small>
-	</div>
-	<div class="progress">
-		<div id="progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-		</div>
-	</div>
+    <div class="logo">
+        <img src="/aireading.gif" width="300">
+    </div>
+    <div class="tip">
+        <small>
+        <div class="ipinfo">
+            <b id="cip"></b><span id="cname"></span>
+        </div>
+        <div>
+            嗨多磨！小爱正在自动为您分配最快的节点这可能需要几秒请耐心等待
+        </div>
+        <div>
+            加载完之后绊爱将进入无限期休眠
+        </div>
+        <hr>
+        <div>
+            进度条如果不动并非卡顿<b>而是绊爱正在努力在加载数据！！！</b>
+        </div>
+        </small>
+    </div>
+    <div class="progress">
+        <div id="progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        </div>
+    </div>
 </div>
 <script>
 var url='https://ao3.kkpost.site/';
 function progress(p){document.getElementById("progress-bar").style.width=p+"%"}
-setTimeout(function(){progress("5");setTimeout(function(){progress("60");setTimeout(function(){progress("95");window.location.href=url;},600);},800);},300);
+setTimeout(function(){progress("5");setTimeout(function(){progress("60");setTimeout(function(){progress("95");window.location.href=url;},1500);},2000);},1000);
 </script>
 </body>
 </html>
